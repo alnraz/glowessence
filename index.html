@@ -47,11 +47,15 @@
     .gallery-grid img {
       width: 200px;
       border-radius: 8px;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     .gallery-caption {
       font-size: 0.9rem;
       text-align: center;
       margin-top: 0.3rem;
+      color: #704214;
     }
     .product-box {
       background: #fff2e5;
@@ -69,6 +73,18 @@
       border-radius: 5px;
       cursor: pointer;
       margin-top: 1rem;
+      font-size: 1rem;
+    }
+    @media (max-width: 700px) {
+      .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .gallery-grid img {
+        width: 90vw;
+        max-width: 300px;
+      }
+      main { padding: 1rem 0.5rem; }
     }
   </style>
 </head>
@@ -127,21 +143,18 @@
 
   <section id="products" class="center-text">
     <h2>GlowEssence Scrubs</h2>
-
     <div class="product-box">
       <h4>🍌 Banana Sugar Scrub</h4>
       <p><strong>Ingredients:</strong> Shea Butter, Banana Extract, Coconut Oil, Vitamin E, Sugar</p>
       <p><strong>Use:</strong> Apply on wet skin, massage, rinse with warm water.</p>
       <p><strong>Benefits:</strong> Hydration, gentle exfoliation, fruity freshness.</p>
     </div>
-
     <div class="product-box">
       <h4>🍉 Watermelon Glow Scrub</h4>
       <p><strong>Ingredients:</strong> Watermelon Extract, Shea, Almond Oil, Essential Oils, Sugar</p>
       <p><strong>Use:</strong> 2–3 times/week. Massage gently on skin.</p>
       <p><strong>Benefits:</strong> Glowing skin, fresh scent, clears pores.</p>
     </div>
-
     <div class="product-box">
       <h4>🍏 Apple Sugar Polish</h4>
       <p><strong>Ingredients:</strong> Apple Extract, Shea Butter, Vitamin E, Sugar</p>
@@ -153,7 +166,6 @@
   <section id="crochet" class="center-text">
     <h2>Handmade Crochet Swimwear</h2>
     <p>Each piece is crafted with love, inspired by African artistry and the rhythms of nature. Explore wraps, bikinis, and custom crochet wear for beach & pool vibes.</p>
-    
     <div class="gallery-grid">
       <div><img src="ornament-158428_1280.webp" alt="Ornament" /><div class="gallery-caption">Decorative patterns</div></div>
       <div><img src="pablo-mouse-1662574_1280.jpg" alt="Pablo mouse" /><div class="gallery-caption">Detail work</div></div>
