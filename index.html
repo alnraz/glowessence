@@ -4,23 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GlowEssence – Jilmari's Wellbeing</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background: #fffdf8;
       margin: 0;
       padding: 0;
-      background: #fffdf8;
       color: #333;
     }
     header, footer {
+      background-color: #ffe4b5;
       text-align: center;
       padding: 1rem;
-      background: #ffd699;
     }
-    nav ul.menu {
+    nav ul {
       list-style: none;
       padding: 0;
+      margin: 1rem 0;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -31,9 +31,27 @@
       font-weight: bold;
       color: #000;
     }
-    .product-section, .crochet, .centered-section {
-      padding: 2rem;
+    main {
+      padding: 1rem 2rem;
+    }
+    .center-text {
       text-align: center;
+    }
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .gallery-grid img {
+      width: 200px;
+      border-radius: 8px;
+    }
+    .gallery-caption {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 0.3rem;
     }
     .product-box {
       background: #fff2e5;
@@ -43,93 +61,129 @@
       max-width: 500px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .product-box h4 {
-      margin-bottom: 0.5rem;
-    }
     button {
       background: #ff9800;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      margin: 1rem 0;
+      color: white;
+      padding: 0.7rem 1.4rem;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
       cursor: pointer;
-    }
-    .gallery img {
-      width: 160px;
-      margin: 0.5rem;
-      border-radius: 10px;
-    }
-    footer {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>GlowEssence</h1>
-    <nav>
-      <ul class="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#crochet">Handmade Swimwear</a></li>
-        <li><a href="#order">Order</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="centered-section" id="about">
+<header>
+  <h1>GlowEssence</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#crochet">Handmade Swimwear</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="about" class="center-text">
     <h2>Welcome to GlowEssence</h2>
-    <p>Where natural beauty meets high-tech simplicity. Every scrub is handmade with love, using rich African shea, pure oils, and fruit extracts to give your skin the glow it deserves.</p>
-    <h3>Our Vision</h3>
-    <p>To nourish skin and souls with products that are ethical, effective, and empowering.</p>
-    <h3>About Us</h3>
-    <p>Founded by Jilmari, GlowEssence is more than a skincare brand — it's a lifestyle of wellness, nature, and handmade care. 🌸</p>
+    <p>GlowEssence is a radiant wellbeing brand by Jilmari, featuring natural skincare like handmade Banana, Watermelon, and Apple scrubs, plus artisan crochet swimwear.</p>
+    <h3>Vision</h3>
+    <p>To nourish skin and soul with ethical, glowing, handcrafted beauty experiences.</p>
   </section>
 
-  <section class="product-section" id="products">
-    <h2>Our Natural Scrubs</h2>
+  <section class="center-text">
+    <h2>Artisan Crochet Gallery</h2>
+    <div class="gallery-grid">
+      <div>
+        <img src="hand-labor-2611401_1280.jpg" alt="Hand labor" />
+        <div class="gallery-caption">Handmade in progress</div>
+      </div>
+      <div>
+        <img src="hooks-1755366_1280.jpg" alt="Hooks" />
+        <div class="gallery-caption">Crochet hooks lineup</div>
+      </div>
+      <div>
+        <img src="horse-6906498_1280.jpg" alt="Horse" />
+        <div class="gallery-caption">Nature-inspired tones</div>
+      </div>
+      <div>
+        <img src="istockphoto-1331493861-1024x1024.jpg" alt="African Model" />
+        <div class="gallery-caption">Crochet style preview</div>
+      </div>
+      <div>
+        <img src="knitting-925031_1280.jpg" alt="Knitting" />
+        <div class="gallery-caption">Knitting the texture</div>
+      </div>
+      <div>
+        <img src="model-5587623_1280.jpg" alt="Model" />
+        <div class="gallery-caption">GlowEssence vibe</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="center-text">
+    <h2>GlowEssence Scrubs</h2>
 
     <div class="product-box">
       <h4>🍌 Banana Sugar Scrub</h4>
-      <p><strong>Ingredients:</strong> Shea Butter, Banana Extract, Sugar, Coconut Oil, Vitamin E</p>
-      <p><strong>Instructions:</strong> Gently massage on wet skin in circles, rinse with warm water.</p>
-      <p><strong>Benefits:</strong> Hydrating, brightening, antioxidant-rich. Softens and exfoliates naturally.</p>
+      <p><strong>Ingredients:</strong> Shea Butter, Banana Extract, Coconut Oil, Vitamin E, Sugar</p>
+      <p><strong>Use:</strong> Apply on wet skin, massage, rinse with warm water.</p>
+      <p><strong>Benefits:</strong> Hydration, gentle exfoliation, fruity freshness.</p>
     </div>
 
     <div class="product-box">
       <h4>🍉 Watermelon Glow Scrub</h4>
-      <p><strong>Ingredients:</strong> Watermelon Extract, Sugar, Shea Butter, Almond Oil, Essential Oils</p>
-      <p><strong>Instructions:</strong> Use 2–3 times per week for a glowing, fresh look.</p>
-      <p><strong>Benefits:</strong> Refreshes skin, clears pores, adds a juicy glow!</p>
+      <p><strong>Ingredients:</strong> Watermelon Extract, Shea, Almond Oil, Essential Oils, Sugar</p>
+      <p><strong>Use:</strong> 2–3 times/week. Massage gently on skin.</p>
+      <p><strong>Benefits:</strong> Glowing skin, fresh scent, clears pores.</p>
     </div>
 
     <div class="product-box">
       <h4>🍏 Apple Sugar Polish</h4>
-      <p><strong>Ingredients:</strong> Apple Extract, Sugar, Shea Butter, Essential Oils, Vitamin E</p>
-      <p><strong>Instructions:</strong> Apply on moist skin, scrub gently, rinse clean.</p>
-      <p><strong>Benefits:</strong> Tones skin, reduces dullness, and smells divine 🍏</p>
+      <p><strong>Ingredients:</strong> Apple Extract, Shea Butter, Vitamin E, Sugar</p>
+      <p><strong>Use:</strong> Use gently on moist skin, then rinse.</p>
+      <p><strong>Benefits:</strong> Smooths texture, tones, and energizes.</p>
     </div>
   </section>
 
-  <section class="crochet" id="crochet">
+  <section id="crochet" class="center-text">
     <h2>Handmade Crochet Swimwear</h2>
-    <p>Explore our exclusive line of netting-style, hand-crafted bikinis & wraps. Made with care for beach days, poolside moments, and photo shoots 🌊</p>
-    <div class="gallery">
-      <img src="https://i.pinimg.com/736x/e0/9d/17/e09d1797a1eaec1e460755b6d3c3d234.jpg" alt="Crochet Bikini 1" />
-      <img src="https://i.pinimg.com/originals/14/e8/eb/14e8eb1e4c3e609ff8fce2198d80c0d6.jpg" alt="Crochet Bikini 2" />
-      <img src="https://i.pinimg.com/736x/f1/5e/9e/f15e9e00c28bb354c541dc4e68a7b59e.jpg" alt="Crochet Bikini 3" />
+    <p>Each piece is crafted with love, inspired by African artistry and the rhythms of nature. Explore wraps, bikinis, and custom crochet wear for beach & pool vibes.</p>
+    
+    <div class="gallery-grid">
+      <div><img src="ornament-158428_1280.webp" alt="Ornament" /><div class="gallery-caption">Decorative patterns</div></div>
+      <div><img src="pablo-mouse-1662574_1280.jpg" alt="Pablo mouse" /><div class="gallery-caption">Detail work</div></div>
+      <div><img src="pumpkins-1009197_1280.jpg" alt="Pumpkins" /><div class="gallery-caption">Earthy tones</div></div>
+      <div><img src="vintage-1662542_1280.jpg" alt="Vintage" /><div class="gallery-caption">Vintage style wrap</div></div>
+      <div><img src="weaving-829937_1280.jpg" alt="Weaving" /><div class="gallery-caption">Traditional weaving</div></div>
+      <div><img src="woman-811866_1280.webp" alt="Woman" /><div class="gallery-caption">Natural beauty</div></div>
+      <div><img src="wool-3982066_1280.jpg" alt="Wool" /><div class="gallery-caption">Wool yarn prep</div></div>
+      <div><img src="yarn-6541887_1280.jpg" alt="Yarn" /><div class="gallery-caption">Soft pastel yarn</div></div>
+      <div><img src="african-violet-1433668_1280.jpg" alt="African violet" /><div class="gallery-caption">Inspired color</div></div>
+      <div><img src="crochet-8202792_1280.jpg" alt="Crochet" /><div class="gallery-caption">Crochet sample</div></div>
+      <div><img src="crochet-doll-2139663_1280.jpg" alt="Crochet doll" /><div class="gallery-caption">Doll pattern</div></div>
+      <div><img src="crochet-hook-3387311_1280.jpg" alt="Hook" /><div class="gallery-caption">Crochet hook in use</div></div>
+      <div><img src="easter-1262085_1280.jpg" alt="Easter" /><div class="gallery-caption">Seasonal styling</div></div>
+      <div><img src="frog-1715409_1280.jpg" alt="Frog" /><div class="gallery-caption">Nature motif</div></div>
+      <div><img src="generated-7458584_1280.jpg" alt="Generated" /><div class="gallery-caption">Final showcase</div></div>
     </div>
   </section>
 
-  <section id="order" class="centered-section">
+  <section id="order" class="center-text" style="margin-top: 2rem;">
     <h2>Ready to Glow?</h2>
     <button onclick="window.location='https://wa.me/447786793379'">Order via WhatsApp</button>
   </section>
 
-  <footer>
-    <p>&copy; 2025 GlowEssence by Jilmari. All rights reserved.</p>
-    <p><a href="https://instagram.com/YOUR_HANDLE" target="_blank">Follow us on Instagram</a></p>
-  </footer>
+</main>
+
+<footer>
+  <p>&copy; 2025 GlowEssence by Jilmari. All rights reserved.</p>
+  <p><a href="https://instagram.com/YOUR_HANDLE" target="_blank">Follow us on Instagram</a></p>
+</footer>
+
 </body>
 </html>
